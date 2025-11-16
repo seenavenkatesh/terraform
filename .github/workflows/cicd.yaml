@@ -9,11 +9,6 @@ jobs:
   terraform:
     runs-on: ubuntu-latest
 
-    defaults:
-      run:
-        working-directory: terraform-vm   # ← use the correct folder
-   # 👈 path to your .tf files
-
     env:                       # 👈 apply env globally (VERY IMPORTANT)
       ARM_CLIENT_ID: ${{ secrets.AZURE_CLIENT_ID }}
       ARM_CLIENT_SECRET: ${{ secrets.AZURE_CLIENT_SECRET }}
