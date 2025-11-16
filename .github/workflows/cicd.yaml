@@ -8,6 +8,10 @@ on:
 jobs:
   terraform:
     runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: terraform   # 👈 PATH TO YOUR .tf FILES
+
 
     steps:
       - name: Checkout repository
