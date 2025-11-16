@@ -11,7 +11,7 @@ jobs:
 
     defaults:
       run:
-        working-directory: terraform-vm   # 👈 path to your .tf files
+        working-directory: terraform/terraform-vm   # 👈 path to your .tf files
 
     env:                       # 👈 apply env globally (VERY IMPORTANT)
       ARM_CLIENT_ID: ${{ secrets.AZURE_CLIENT_ID }}
