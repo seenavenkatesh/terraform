@@ -10,7 +10,7 @@ jobs:
     runs-on: ubuntu-latest
     defaults:
       run:
-        working-directory: terraform   # 👈 PATH TO YOUR .tf FILES
+        working-directory: terraform-vm   # 👈 PATH TO YOUR .tf FILES
 
 
     steps:
