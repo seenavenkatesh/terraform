@@ -2,7 +2,7 @@ name: Terraform Deploy Azure VM
 
 on:
   push:
-    branches: ["mster"]
+    branches: ["master"]
 
 jobs:
   terraform:
