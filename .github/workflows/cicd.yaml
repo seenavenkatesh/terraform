@@ -11,7 +11,7 @@ jobs:
 
     defaults:
       run:
-        working-directory: terraform
+        working-directory: terraform-vm
 
     env:                       # 👈 apply env globally (VERY IMPORTANT)
       ARM_CLIENT_ID: ${{ secrets.AZURE_CLIENT_ID }}
