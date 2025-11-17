@@ -3,7 +3,7 @@ name: Terraform Deploy Azure VM
 on:
   workflow_dispatch:
   push:
-    branches: ["main"]
+    branches: ["mster"]
 
 jobs:
   terraform:
