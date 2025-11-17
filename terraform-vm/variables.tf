@@ -50,8 +50,8 @@ variable "admin_username" {
 }
 
 variable "ssh_public_key_path" {
-  description = "Path to the SSH public key (for Linux VM)"
+  description = "Path to the SSH public key"
   type        = string
-  default     = "~/.ssh/id_rsa.pub"
+  default     = "ssh_key.pub"
 }
 
