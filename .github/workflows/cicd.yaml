@@ -10,6 +10,9 @@ jobs:
   terraform:
     name: "Terraform Apply VM"
     runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: terraform-vm
 
     permissions:
       id-token: write
@@ -36,10 +39,8 @@ jobs:
       run: terraform init
 
     - name: Terraform Plan
-      working-directory: terraform-vm
       run: terraform plan -out=tfplan
 
     - name: Terraform Apply
       if: github.ref == 'refs/heads/main'
-      working-directory: terraform-vm
       run: terraform apply -auto-approve tfplan
